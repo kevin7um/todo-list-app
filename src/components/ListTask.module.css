@@ -1,0 +1,160 @@
+.container{
+  width: 100%;
+  max-width: 76.8rem;
+  padding: 0 1.6rem;
+  margin: -2.7rem auto 0;
+}
+
+
+/* Form Content */
+.formContent{
+  width: 100%;
+  height: 5.4rem;
+  display: flex;
+}
+
+.formContent input[type='text']{
+  flex: 1;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1.6rem;
+  border: 0;
+  border-radius: 8px;
+  margin-right: .8rem;
+}
+
+.formContent > button[type='submit']{
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: bold;
+  padding: 1.6rem;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  
+  transition: background-color .1s;
+}
+
+.formContent > button[type='submit']:hover{
+  background-color: var(--blue);
+}
+
+/* Task Content */
+.content{
+  margin-top: 6.4rem;
+  width: 100%;
+}
+
+/* Task Header */
+.taskHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskHeader .created strong{
+  color: var(--blue);
+}
+
+.taskHeader .done strong{
+  color: var(--purple);
+}
+
+.taskHeader span{
+  background: var(--gray-400);
+  margin-left: .8rem;
+  padding: .2rem .8rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray-200);
+}
+
+/* Task Content */
+.taskContent{
+  margin-top: 2.4rem;
+}
+
+.empty{
+  padding: 6.4rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+
+  border-top: solid 1px var(--gray-400);
+  border-radius: 8px;
+}
+.empty > div{
+  text-align: center;
+  color: var(--gray-300);
+}
+.emptyOcuted{
+  visibility: hidden;
+  max-height: 0;
+}
+
+/* Tasks List */
+
+.taskList{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.task{
+  background-color: var(--gray-500);
+  padding: 1.6rem;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+
+.task input[type='checkbox']{
+  appearance: initial;
+  width: 1.745rem ;
+  height: 1.745rem;
+  border: solid 2px var(--blue);
+  border-radius: 30px;
+  background-color: transparent;
+}
+.task input:checked{
+  border: solid 2px var(--purple);
+  background: var(--purple);
+  background-image: url("../assets/Check.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.taskCompleted{
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.task label{
+  flex: 1;
+}
+
+.task > button{
+  background: transparent;
+  padding: .3rem .4rem;
+  border: 0;
+  border-radius: 8px;
+  color: var(--gray-300);
+  line-height: 0;
+  cursor: pointer;
+  transition: color .1s, background .1s;
+}
+
+.task > button:hover{
+  color: var(--danger);
+  background: var(--gray-400);
+}
