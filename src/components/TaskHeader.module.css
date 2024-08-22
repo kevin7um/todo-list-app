@@ -1,0 +1,23 @@
+/* Task Header */
+.taskHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskHeader .created strong{
+  color: var(--blue);
+}
+
+.taskHeader .done strong{
+  color: var(--purple);
+}
+
+.taskHeader span{
+  background: var(--gray-400);
+  margin-left: .8rem;
+  padding: .2rem .8rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray-200);
+}

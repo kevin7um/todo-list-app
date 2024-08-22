@@ -1,0 +1,37 @@
+/* Form Content */
+.formContent{
+  width: 100%;
+  height: 5.4rem;
+  display: flex;
+  margin-bottom: 6.4rem;
+}
+
+.formContent input[type='text']{
+  flex: 1;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1.6rem;
+  border: 0;
+  border-radius: 8px;
+  margin-right: .8rem;
+}
+
+.formContent > button[type='submit']{
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: bold;
+  padding: 1.6rem;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  
+  transition: background-color .1s;
+}
+
+.formContent > button[type='submit']:hover{
+  background-color: var(--blue);
+}
